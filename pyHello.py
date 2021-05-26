@@ -5,7 +5,7 @@ PORT=8080
 name=os.environ['NAME']
 name2=os.environ['NAME2']
 
-if name == None or len(name) == 0:  
+if name == None or name == "None" or len(name) == 0:  
    name = "AWS"
 MESSAGE = "Hello, " + name + ", " + name2 + "!"
 print("Message: '" + MESSAGE + "'")
