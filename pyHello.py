@@ -1,7 +1,7 @@
 from flask import Flask
 import os
 
-PORT=8080
+PORT = 8080
 name=os.environ['NAME']
 name2=os.environ['NAME2']
 
