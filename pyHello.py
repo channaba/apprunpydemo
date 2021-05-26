@@ -11,7 +11,6 @@ MESSAGE = "Hello, " + name + ", " + name2 + "!"
 print("Message: '" + MESSAGE + "'")
 
 app = Flask(__name__)
-
 @app.route("/")
 def root():  
   print("Handling web request. Returning message.")  
