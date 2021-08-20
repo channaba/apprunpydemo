@@ -4,11 +4,11 @@ import os
 PORT = 8080
 
 name=os.environ['NAME']
-name2=os.environ['NAME2']
+# name2=os.environ['NAME2']
 
 if name == None or name == "None" or len(name) == 0:  
    name = "AWS"
-MESSAGE = "Hello, " + name + ", " + name2 + "!"
+MESSAGE = "Hello, " + name  + "!"
 print("Message: '" + MESSAGE + "'")
 
 app = Flask(__name__)
@@ -20,3 +20,4 @@ def root():
  
 if __name__ == "__main__":  
   app.run(debug=True, host="0.0.0.0", port=PORT)
+
