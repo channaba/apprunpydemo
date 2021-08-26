@@ -8,7 +8,7 @@ name=os.environ['NAME']
 
 if name == None or name == "None" or len(name) == 0:  
    name = "AWS"
-MESSAGE = "Good morning, " + name  + "!"
+MESSAGE = "Hello, " + name  + "!"
 print("Message: '" + MESSAGE + "'")
 
 app = Flask(__name__)
